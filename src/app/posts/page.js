@@ -9,8 +9,8 @@ export default async function Posts() {
       {posts.rows.map((post) => {
         return (
           <Link href={`/posts/${post.id}`} key={post.id}>
-            <h3>{post.username}</h3>
-            <p>{post.message}</p>
+            <h3>{post.title} by {post.username}</h3>
+            {/* <p>{post.message}</p> */}
           </Link>
         );
       })}
