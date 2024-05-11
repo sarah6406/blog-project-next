@@ -16,12 +16,12 @@ export default function AddPost() {
   }
   return (
     <div>
-      <h1>This is the Add Post route.</h1>
+      {/* <h1>This is the Add Post route.</h1> */}
       <h2>Add Post!</h2>
       <form action={handleAddPost}  className="form">
-        <label htmlFor="username">Username</label>
+        <label htmlFor="username">Username:</label>
         <input name="username" id="username" placeholder="Username" />
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message">Message:</label>
         <textarea name="message" id="message" placeholder="Message" />
 
         <button type="submit">Add Message!</button>

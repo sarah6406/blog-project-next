@@ -107,26 +107,40 @@ a {
 } */
 body {
   font-size: 1.2rem;
-  background-color:  black;
+  background-color: rgb(2, 38, 2);
   color: white;
   font-family: monospace;
   /* background: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/03/27/17/istock-165831199.jpg?quality=75&width=1250&crop=3%3A2%2Csmart&auto=webp");
  background-repeat: no-repeat;
  background-size: cover; */
+  max-width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
   color: white;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  max-width: 50vw;
-
+  /* max-width: 50vw; */
 }
-input, button {
+input,
+button {
   font-family: monospace;
+}
+
+footer {
+  padding: 1rem;
+}
+textarea {
+  height: 10rem;
 }

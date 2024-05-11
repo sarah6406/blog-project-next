@@ -29,7 +29,7 @@ export default async function IndividualPostPage({ params }) {
   const post = result.rows[0];
   return (
     <div>
-      <h2>Individual post page</h2>
+      {/* <h2>Individual post page</h2> */}
       <p>Post #{post.id}</p>
       <p>
         <strong>{post.username}</strong> has posted:
@@ -49,7 +49,7 @@ export default async function IndividualPostPage({ params }) {
       </div>
 
       <div>
-        <h1>This is the comments page route for all comments.</h1>
+        {/* <h1>This is the comments page route for all comments.</h1> */}
         {allComments.rows.map((comment) => {
           return (
             <div key={comment.id}>
